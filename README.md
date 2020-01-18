@@ -2,6 +2,8 @@
 
 C++ Script to help undergrad students at the University of Waterloo figure out what courses they still need to take in order to fulfill their degree requirements and graduate. This calculator was made to be compatible for the 2018-2019 BCS degree checklist. You will need bash, the default shell for the mac terminal.
 
+**I wrote this in the linux student environment, so it may behave differently in your own environment**
+
 
 1. Download the repository
 2. Open terminal and navigate into the repository using "ls" and "cd"
