@@ -4,5 +4,6 @@ C++ Script to help undergrad students at the University of Waterloo figure out w
 
 1. Download the repository
 2. Open terminal and navigate into the repository using "ls" and "cd"
+3. type: "make coursecalc"
 3. type: "./coursecalc"
 4. Follow the instructions
