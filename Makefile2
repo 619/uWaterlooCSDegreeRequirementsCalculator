@@ -1,0 +1,32 @@
+# Universal makefile for single C++ program
+#
+# Use gcc flag -MMD (user) or -MD (user/system) to generate dependences among source files.
+# Use make default rules for commonly used file-name suffixes and make variables names.
+#
+# % make [ phil ]
+
+########## Variables ##########
+
+CXX = g++					# compiler
+CXXFLAGS = -g -std=c++11 -Wall -MMD		# compiler flags
+MAKEFILE_NAME = ${firstword ${MAKEFILE_LIST}}	# makefile name
+
+OBJECTS = coursecalc.o				# object files forming executable
+EXEC = coursecalc					# executable name
+
+DEPENDS = ${OBJECTS:.o=.d}			# substitute ".o" with ".d"
+
+########## Targets ##########
+
+.PHONY : clean					# not file names
+
+${EXEC} : ${OBJECTS}				# link step
+	${CXX} ${CXXFLAGS} $^ -o $@		# additional object files before $^
+
+${OBJECTS} : ${MAKEFILE_NAME}			# OPTIONAL : changes to this file => recompile
+
+-include ${DEPENDS}				# include *.d files containing program dependences
+
+clean :						# remove files that can be regenerated
+	rm -f ${DEPENDS} ${OBJECTS} ${EXEC}
+
