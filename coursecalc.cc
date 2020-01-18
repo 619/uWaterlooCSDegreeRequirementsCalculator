@@ -34,6 +34,7 @@ int main()
 	cout << "----- (☞ﾟヮﾟ)☞ CS DEGREE COURSE REQUIREMENTS CALCULATOR ☜(ﾟヮﾟ☜) ----" << endl;
 	cout << endl;
 	cout << "version 1.0" << endl;
+	cout << "Compatible with the 2018-2019 BCS checklist" << endl;
 	cout << "*Does not yet work for CS Options*" << endl;
 	cout << endl;
 	cout << "1. Download unofficial transcript." << endl;
