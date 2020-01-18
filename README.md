@@ -1,6 +1,6 @@
 # uWaterlooCSDegreeRequirementsCalculator
 
-C++ Script to help undergrad students at the University of Waterloo figure out what courses they still need to take in order to fulfill their degree requirements and graduate. You will need bash, the default shell for the mac terminal.
+C++ Script to help undergrad students at the University of Waterloo figure out what courses they still need to take in order to fulfill their degree requirements and graduate. This calculator was made to be compatible for the 2018-2019 BCS degree checklist. You will need bash, the default shell for the mac terminal.
 
 
 1. Download the repository
