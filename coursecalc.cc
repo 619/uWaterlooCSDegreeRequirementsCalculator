@@ -534,6 +534,8 @@ int main()
 		cout << " more courses from electives!" << endl;
 	}
 	cout << endl;
+	cout << "If you don't see anything above this line, you've completed you're degree." << endl;
+	cout << endl;
 	cout << "Warnings:" << endl;
 	cout << "This calculator does not check for the breadth and depth chain" << endl;
 	cout << "This calculator counts failed and unusable courses" << endl;
