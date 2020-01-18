@@ -18,7 +18,7 @@ DEPENDS = ${OBJECTS:.o=.d}			# substitute ".o" with ".d"
 
 ########## Targets ##########
 
-.PHONY : clean					# not file names
+.PHONY : clean						# not file names
 
 ${EXEC} : ${OBJECTS}				# link step
 	${CXX} ${CXXFLAGS} $^ -o $@		# additional object files before $^

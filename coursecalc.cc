@@ -95,8 +95,11 @@ int main()
 					if (courseno == "100" || courseno == "223") {
 						if (communication1) {
 							humreq += 0.5;
+							if (!communication2) {
+								communication2 = true;
+							}
 						} else {
-						communication1 = true;
+							communication1 = true;
 						}
 					} else if (courseno == "225" || courseno == "227" || courseno == "228") {
 						if (communication2) {
@@ -112,6 +115,9 @@ int main()
 					if (courseno == "129R" || courseno == "109") {
 						if (communication1) {
 							humreq += 0.5;
+							if (!communication2) {
+								communication2 = true;
+							}
 						} else {
 						communication1 = true;
 						}
@@ -332,19 +338,22 @@ int main()
 				sst >> courseno;
 				if (courseno == "101R" || courseno == "102R" || courseno == "129R") {
 					if (communication1) {
+						if (!communication2) {
+							communication2 = true;
+						}
 						if (nonmath >= 5.0) {
 							electives += 0.5;
 						} else {
 							nonmath += 0.5;
-						}              
-                                        } else {
-                                                communication1 = true;
+						}       
+                    } else {
+                    	communication1 = true;
 						if (nonmath >= 5.0) {
-                                                        electives += 0.5;
-                                                } else {
-                                                        nonmath += 0.5;
-                                                }
-                                        }
+							electives += 0.5;
+						} else {
+							nonmath += 0.5;
+						}
+					}
 				} else {
 					if (nonmath >= 5.0) {
                                                 electives += 0.5;
